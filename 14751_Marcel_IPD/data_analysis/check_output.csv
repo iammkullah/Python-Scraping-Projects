@@ -1,0 +1,34 @@
+scrape_datetime,PERIOD_START,PERIODICITY,METRIC,UNIT,VALUE
+2024-01-25 12:18:54.423903,2023-01-01,M,Traffic Accidents (Provisional),Number,23419.0
+2024-01-25 12:18:54.423903,2023-01-01,M,Fatalities,Number,217.0
+2024-01-25 12:18:54.423903,2023-01-01,M,Injuries (Provisional),Number,27793.0
+2024-01-25 12:18:54.423903,2023-02-01,M,Traffic Accidents (Provisional),Number,23369.0
+2024-01-25 12:18:54.423903,2023-02-01,M,Fatalities,Number,170.0
+2024-01-25 12:18:54.423903,2023-02-01,M,Injuries (Provisional),Number,27555.0
+2024-01-25 12:18:54.423903,2023-03-01,M,Traffic Accidents (Provisional),Number,26442.0
+2024-01-25 12:18:54.423903,2023-03-01,M,Fatalities,Number,226.0
+2024-01-25 12:18:54.423903,2023-03-01,M,Injuries (Provisional),Number,31406.0
+2024-01-25 12:18:54.423903,2023-04-01,M,Traffic Accidents (Provisional),Number,24410.0
+2024-01-25 12:18:54.423903,2023-04-01,M,Fatalities,Number,184.0
+2024-01-25 12:18:54.423903,2023-04-01,M,Injuries (Provisional),Number,28994.0
+2024-01-25 12:18:54.423903,2023-05-01,M,Traffic Accidents (Provisional),Number,24534.0
+2024-01-25 12:18:54.423903,2023-05-01,M,Fatalities,Number,208.0
+2024-01-25 12:18:54.423903,2023-05-01,M,Injuries (Provisional),Number,29435.0
+2024-01-25 12:18:54.423903,2023-06-01,M,Traffic Accidents (Provisional),Number,24769.0
+2024-01-25 12:18:54.423903,2023-06-01,M,Fatalities,Number,176.0
+2024-01-25 12:18:54.423903,2023-06-01,M,Injuries (Provisional),Number,29142.0
+2024-01-25 12:18:54.423903,2023-07-01,M,Traffic Accidents (Provisional),Number,24714.0
+2024-01-25 12:18:54.423903,2023-07-01,M,Fatalities,Number,236.0
+2024-01-25 12:18:54.423903,2023-07-01,M,Injuries (Provisional),Number,29293.0
+2024-01-25 12:18:54.423903,2023-08-01,M,Traffic Accidents (Provisional),Number,25450.0
+2024-01-25 12:18:54.423903,2023-08-01,M,Fatalities,Number,240.0
+2024-01-25 12:18:54.423903,2023-08-01,M,Injuries (Provisional),Number,31026.0
+2024-01-25 12:18:54.423903,2023-09-01,M,Traffic Accidents (Provisional),Number,24840.0
+2024-01-25 12:18:54.423903,2023-09-01,M,Fatalities,Number,215.0
+2024-01-25 12:18:54.423903,2023-09-01,M,Injuries (Provisional),Number,29504.0
+2024-01-25 12:18:54.423903,2023-10-01,M,Traffic Accidents (Provisional),Number,27861.0
+2024-01-25 12:18:54.423903,2023-10-01,M,Fatalities,Number,252.0
+2024-01-25 12:18:54.423903,2023-10-01,M,Injuries (Provisional),Number,32781.0
+2024-01-25 12:18:54.423903,2023-11-01,M,Traffic Accidents (Provisional),Number,27726.0
+2024-01-25 12:18:54.423903,2023-11-01,M,Fatalities,Number,254.0
+2024-01-25 12:18:54.423903,2023-11-01,M,Injuries (Provisional),Number,32644.0

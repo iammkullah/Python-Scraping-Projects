@@ -1,0 +1,13 @@
+scrape_datetime,PERIOD_START,PERIODICITY,METRIC,UNIT,VALUE
+2023-01-01,2023-01-01,M,"['Traffic Accidents (Provisional)', 'Fatalities', 'Injuries (Provisional)']",Number,"[23419.0, 217.0, 27793.0]"
+2023-02-01,2023-02-01,M,"['Traffic Accidents (Provisional)', 'Fatalities', 'Injuries (Provisional)']",Number,"[23369.0, 170.0, 27555.0]"
+2023-03-01,2023-03-01,M,"['Traffic Accidents (Provisional)', 'Fatalities', 'Injuries (Provisional)']",Number,"[26442.0, 226.0, 31406.0]"
+2023-04-01,2023-04-01,M,"['Traffic Accidents (Provisional)', 'Fatalities', 'Injuries (Provisional)']",Number,"[24410.0, 184.0, 28994.0]"
+2023-05-01,2023-05-01,M,"['Traffic Accidents (Provisional)', 'Fatalities', 'Injuries (Provisional)']",Number,"[24534.0, 208.0, 29435.0]"
+2023-06-01,2023-06-01,M,"['Traffic Accidents (Provisional)', 'Fatalities', 'Injuries (Provisional)']",Number,"[24769.0, 176.0, 29142.0]"
+2023-07-01,2023-07-01,M,"['Traffic Accidents (Provisional)', 'Fatalities', 'Injuries (Provisional)']",Number,"[24714.0, 236.0, 29293.0]"
+2023-08-01,2023-08-01,M,"['Traffic Accidents (Provisional)', 'Fatalities', 'Injuries (Provisional)']",Number,"[25450.0, 240.0, 31026.0]"
+2023-09-01,2023-09-01,M,"['Traffic Accidents (Provisional)', 'Fatalities', 'Injuries (Provisional)']",Number,"[24840.0, 215.0, 29504.0]"
+2023-10-01,2023-10-01,M,"['Traffic Accidents (Provisional)', 'Fatalities', 'Injuries (Provisional)']",Number,"[27861.0, 252.0, 32781.0]"
+2023-11-01,2023-11-01,M,"['Traffic Accidents (Provisional)', 'Fatalities', 'Injuries (Provisional)']",Number,"[27726.0, 254.0, 32644.0]"
+2023-12-01,2023-12-01,M,"['Traffic Accidents (Provisional)', 'Fatalities', 'Injuries (Provisional)']",Number,"[nan, nan, nan]"
