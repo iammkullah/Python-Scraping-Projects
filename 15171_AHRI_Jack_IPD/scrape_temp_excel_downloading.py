@@ -8,13 +8,12 @@ import logging
 import requests
 import calendar
 import pandas as pd
-from io import BytesIO
 from datetime import datetime
 from bs4 import BeautifulSoup
 
 
 base_url = "https://www.ahrinet.org/analytics/statistics/monthly-shipments"
-job_name = "15171 AHRI Jack IPD Scrape using requests"
+job_name = "15171 AHRI Jack IPD Scrape using requests/selennium"
 output_filename = (
     job_name.split("using")[0].strip().lower().replace(" ", "-") + "-sample.csv"
 )
@@ -153,11 +152,10 @@ class Scraper:
             os.remove("temp_pdf.pdf")
             return excel_link
     
-    def read_excel(self, df, month, year):
+    def read_excel(self, excel_path, month, year):
         
         try:
-            
-            df_excel = df
+            df_excel = pd.read_excel(excel_path)
             df_excel = df_excel[['Product_Type', 'Month_to_Date_Units']]
             
             month_number = datetime.strptime(month, '%B').month
@@ -175,6 +173,7 @@ class Scraper:
             logging.error("Something wrong with reading excel ...")
         
         finally:
+            os.remove(excel_path)
             return df_excel
     
 
@@ -201,6 +200,7 @@ class Scraper:
                         if "www.ahrinet.org" not in month_link:
                             month_link = "https://www.ahrinet.org" + month_link
                         
+                        excel_file_name = f"{year}_{month}.xlsx"
                         if month_link.endswith('.pdf'):
                             monthly_link_response = session.get(month_link)
                             if monthly_link_response.status_code == 200:
@@ -213,12 +213,9 @@ class Scraper:
                                 excel_link_response = session.get(excel_link)
                                 if excel_link_response.status_code == 200:
                                     logging.info(f"Sucessful request to download excel for {month} ...")
-                                    # Read the content of the response (Excel file) into a BytesIO object
-                                    excel_data = BytesIO(excel_link_response.content)
-                                    
-                                    # Read Excel file from BytesIO object into a DataFrame
-                                    df = pd.read_excel(excel_data)
-                                    data = self.read_excel(df, month, year)
+                                    with open(excel_file_name, 'wb') as file:
+                                        file.write(excel_link_response.content)
+                                    data = self.read_excel(excel_file_name, month, year)
                             else:
                                 logging.error(f"Something wrong with the request for {month_link} ...")
                             
@@ -240,12 +237,9 @@ class Scraper:
                                 excel_link_response = session.get(excel_link)
                                 if excel_link_response.status_code == 200:
                                     logging.info(f"Sucessful request to download excel for {month} ...")
-                                    # Read the content of the response (Excel file) into a BytesIO object
-                                    excel_data = BytesIO(excel_link_response.content)
-                                    
-                                    # Read Excel file from BytesIO object into a DataFrame
-                                    df = pd.read_excel(excel_data)
-                                    data = self.read_excel(excel_data, month, year)
+                                    with open(excel_file_name, 'wb') as file:
+                                        file.write(excel_link_response.content)
+                                    data = self.read_excel(excel_file_name, month, year)
                                 
                             else:
                                 logging.error(f"Something wrong with the request for {month_link} ...")
@@ -277,7 +271,7 @@ class Scraper:
 
         if not success:
             self.MASTER_DF = pd.DataFrame()
-            
+            self.remove_dir()
             logging.error("SCRAPER FAILED. RETRYING...")
 
         return success

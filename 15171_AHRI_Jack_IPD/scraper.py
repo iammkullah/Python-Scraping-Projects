@@ -311,9 +311,7 @@ def run(filename: str):
             )
     else:
         logging.error("No data scraped ...")
-
-
+        
 if __name__ == "__main__":
     run(filename=output_filename)
     logging.info("ALL DONE")
-
