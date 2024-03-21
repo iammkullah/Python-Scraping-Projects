@@ -69,4 +69,3 @@ To run a scraping project on your system, follow these steps:
 If you have any questions, feedback, or just want to say hi, feel free to connect with me on [LinkedIn](https://www.linkedin.com/in/iammkullah/). You can also find me on other social media platforms as [@iammkullah](#).
 
 Happy Scraping! 🌟
-```
